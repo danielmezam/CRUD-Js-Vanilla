@@ -5,8 +5,8 @@ const updateBtnSubmit = document.getElementById("updateBtnSubmit");
 let userListArray = [];
 let updateFlag = false;
 let dataToUpdate = null;
-//Funciones
 
+//Funciones
 const addUser = user => {
   userInfo = {
     name: user.name,
@@ -18,11 +18,13 @@ const addUser = user => {
   return userInfo;
 };
 
+//Función llamada para actualizar el storage
 const userStorage = () => {
   localStorage.setItem("list", JSON.stringify(userListArray));
   renderList();
 };
 
+//Crear/editar usuario
 const createUser = e => {
   e.preventDefault();
   if (updateFlag) {
@@ -51,6 +53,7 @@ const createUser = e => {
   }
 };
 
+//Para pintar todos los usuarios en el dom
 const renderList = () => {
   userListUI.innerHTML = "";
   userListArray = JSON.parse(localStorage.getItem("list"));
