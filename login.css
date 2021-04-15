@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-color: #f2f2f2;
+  font-family: "Roboto", sans-serif;
+}
+
+.signup {
+  display: none;
+}
+
+.container {
+  width: 50%;
+  height: 100vh;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.signup,
+.login {
+  width: 80%;
+  margin: auto;
+  padding: 30px 20px;
+  box-sizing: border-box;
+  background-color: #fff;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  -webkit-box-shadow: 10px 10px 25px -17px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 25px -17px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 25px -17px rgba(0, 0, 0, 0.75);
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.field {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+input {
+  border: 1px solid #afb5b9;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+
+.submitBtn {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: #57be5d;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 16px;
+  margin-top: 20px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.registerBtn,
+.signinBtn {
+  text-align: center;
+  border: none;
+  outline: none;
+  margin: auto;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+}
+
+.alert {
+  text-align: center;
+  display: none;
+  color: red;
+}
